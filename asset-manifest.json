@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/redline/static/css/main.6a3150b4.css",
-    "main.js": "/redline/static/js/main.ac63a5c9.js",
-    "static/js/787.1f475641.chunk.js": "/redline/static/js/787.1f475641.chunk.js",
-    "index.html": "/redline/index.html",
-    "static/media/youtube-brands.svg": "/redline/static/media/youtube-brands.55d8bd854c57dce336ea6357a7a387bd.svg",
-    "static/media/tiktok-brands.svg": "/redline/static/media/tiktok-brands.2e4d899eec4f4aecbfdf09399c2a8d0a.svg",
-    "main.6a3150b4.css.map": "/redline/static/css/main.6a3150b4.css.map",
-    "main.ac63a5c9.js.map": "/redline/static/js/main.ac63a5c9.js.map",
-    "787.1f475641.chunk.js.map": "/redline/static/js/787.1f475641.chunk.js.map"
+    "main.css": "/static/css/main.6a3150b4.css",
+    "main.js": "/static/js/main.c525a180.js",
+    "static/js/787.1f475641.chunk.js": "/static/js/787.1f475641.chunk.js",
+    "index.html": "/index.html",
+    "static/media/youtube-brands.svg": "/static/media/youtube-brands.55d8bd854c57dce336ea6357a7a387bd.svg",
+    "static/media/tiktok-brands.svg": "/static/media/tiktok-brands.2e4d899eec4f4aecbfdf09399c2a8d0a.svg",
+    "main.6a3150b4.css.map": "/static/css/main.6a3150b4.css.map",
+    "main.c525a180.js.map": "/static/js/main.c525a180.js.map",
+    "787.1f475641.chunk.js.map": "/static/js/787.1f475641.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a3150b4.css",
-    "static/js/main.ac63a5c9.js"
+    "static/js/main.c525a180.js"
   ]
 }
