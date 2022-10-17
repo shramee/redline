@@ -16,7 +16,7 @@ export const getRaceContractInstance = wallet => {
 }
 
 export const
-	getRobots = ( walletAddress ) => {
+	fetchNFTsFromAspect = ( walletAddress ) => {
 		const options = {method: 'GET', headers: {Accept: 'application/json'}};
 
 //		return new Promise( res => res( dummyRobotNFTs ) );
