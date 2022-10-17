@@ -41,11 +41,11 @@ const Robot = ( {robot, robotInRace, submitToRace} ) => {
 				<span className="fw4 o-70 ml2">{name}</span>
 			</h5>
 			<dl className="stats ma0 pt1">
-				{attributes.map( ( {trait_type, value}, i ) => {
-					return <>
-						<dt key={'dt' + i} className="f7 tracked-tight ttu ml0 fl">{trait_type}</dt>
-						<dd key={'dd' + i} className="f6 b ml0 tr mb1">{value}</dd>
-					</>;
+				{Object.keys(attributes).map( ( trait_type, i ) => {
+					return <div key={i}>
+						<dt key={'dt' + i} className="f7 tracked-tight ttu ml0 fl">{trait_type.replace( /([A-Z])/g, ' $1' )}</dt>
+						<dd key={'dd' + i} className="f6 b ml0 tr mb1">{attributes[trait_type]}</dd>
+					</div>;
 				} )}
 			</dl>
 		</div>
