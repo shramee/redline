@@ -20,7 +20,7 @@ export const
 
 // Contract addresses
 export const
-	robotsNFTsContractAddress = '0x000658fd29c4d5b5bc56e948a206bd40f8bfa4aa4acfe17ebebfac035dadf34d',
+	robotsNFTsContractAddress = '0x05bea16b194835547c5222949e6b721331240dcd92f7e19c7e4e265f4b88a648',
 	raceContractAddress       = '0x078d1fd91e71d15dc05ff65de1afc4733993e0c7c88d17e00768383e3151f76f';
 
 export const abi_raceContract = _abi_raceContract;
