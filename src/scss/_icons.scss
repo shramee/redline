@@ -1,0 +1,16 @@
+.chevron-left:before,
+.chevron-right:before {
+	content: '';
+	display: inline-block;
+	border-bottom-right-radius: .07em;
+	width: .7em;
+	height: .7em;
+	box-shadow: .1em .1em currentColor;
+	margin-left: .32em;
+	margin-right: -.2em;
+	transform: rotate(-225deg);
+}
+
+.chevron-right:before {
+	// @TODO
+}
