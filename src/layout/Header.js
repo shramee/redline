@@ -1,18 +1,18 @@
 import WalletConnect from '../components/WalletConnect';
 import {Consumer} from "../app/AppContext";
+import {Link} from "react-router-dom";
 
 const Header = () => {
 	return <Consumer>
-		{( {setWallet}) => {
+		{( {setContext}) => {
 			return <>
-				<a className="dtc v-mid mid-gray link dim w-25" href="#" title="Home">
+				<Link className="dtc v-mid mid-gray link dim w-25" href="/" title="Home">
 					<h1 className="montserrat900 white f3 ma0 v-mid ttu">
-						<span style={{verticalAlign: '-1px', color: '#e00'}}>Red</span>
-						line  – alpha
+						<img src="https://redline.game/media/logo.png" alt="Logo" style={{height:28, width: 'auto'}}/>
 					</h1>
-				</a>
+				</Link>
 				<nav className="dtc v-mid w-75 tr">
-					<WalletConnect autoConnect={true} onConnectedStatusChange={( connected, wallet ) => setWallet( wallet )}/>
+					<WalletConnect autoConnect={true} onConnectedStatusChange={( isConnected, wallet ) => setContext( {wallet} )}/>
 				</nav>
 			</>;
 		}}
