@@ -2,6 +2,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from './layout/Header'
 import Home from './pages/Home'
 import Workshop from './pages/Workshop'
+import Inventory from './pages/Inventory'
 import AppContext from './app/AppContext';
 import {useEffect, useState} from "react";
 import {fetchNFTsFromAspect} from "./services/data";
@@ -12,31 +13,32 @@ function App() {
 		nfts  : null,
 	} );
 	const fetchNFTs = () => {
-		const {selectedAddress} = context.wallet;
-		fetchNFTsFromAspect( selectedAddress ).then( nfts => {
-			const partNFTs = [], skinNFTs = [], robotNFTs = [], allNFTs = [];
-			nfts.forEach( ( {token_id, name, description, attributes, image_uri} ) => {
-				const nftData = {
-					token_id, description, image_uri,
-					name      : name.replace( 'Redline Alpha: ', '' ),
-					attributes: {}
-				};
-				attributes.forEach( ( {trait_type, value} ) => {
-					if ( value && value !== '0' ) {
-						nftData.attributes[trait_type.replace( ' ', '' )] = value
+		const {selectedAddress} = context.wallet || {};
+		selectedAddress && fetchNFTsFromAspect( selectedAddress )
+			.then( nfts => {
+				const partNFTs = [], skinNFTs = [], robotNFTs = [], allNFTs = [];
+				nfts.forEach( ( {token_id, name, description, attributes, image_uri} ) => {
+					const nftData = {
+						token_id, description, image_uri,
+						name      : name.replace( 'Redline Alpha: ', '' ),
+						attributes: {}
+					};
+					attributes.forEach( ( {trait_type, value} ) => {
+						if ( value && value !== '0' ) {
+							nftData.attributes[trait_type.replace( ' ', '' )] = value
+						}
+					} );
+					allNFTs.push( nftData );
+					if ( nftData.attributes['PartType'] ) {
+						partNFTs.push( nftData );
+					} else if ( nftData.attributes['SkinType'] ) {
+						skinNFTs.push( nftData );
+					} else {
+						robotNFTs.push( nftData );
 					}
 				} );
-				allNFTs.push( nftData );
-				if ( nftData.attributes['PartType'] ) {
-					partNFTs.push( nftData );
-				} else if ( nftData.attributes['SkinType'] ) {
-					skinNFTs.push( nftData );
-				} else {
-					robotNFTs.push( nftData );
-				}
+				setContext( {allNFTs, partNFTs, skinNFTs, robotNFTs} )
 			} );
-			setContext( {allNFTs, partNFTs, skinNFTs, robotNFTs} )
-		} );
 	}
 
 	function setContext( newContext ) {
@@ -56,6 +58,7 @@ function App() {
 							<Route path="/">
 								<Route index element={<Home/>}/>
 								<Route path="workshop" element={<Workshop/>}/>
+								<Route path="inventory" element={<Inventory/>}/>
 								{/*<Route path={'*'} element={<Home/>}/>*/}
 								{/*<Route path="*" element={<NoPage />} />*/}
 							</Route>
