@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import Header from './layout/Header'
 import Home from './pages/Home'
 import Workshop from './pages/Workshop'
@@ -49,19 +49,19 @@ function App() {
 		<BrowserRouter>
 			<AppContext.Provider value={{...context, setContext, fetchNFTs}}>
 				<div className="App min-vh-100 flex flex-column w-100 bg-near-black near-white">
-					<header className="dt w-100 border-box pa3 ph4-ns bb b--white-10">
+					<header id='header-navbar' className="dt w-100 border-box pa3 ph4-ns bb b--white-10 flex items-center">
 						<Header/>
 					</header>
 
 					<section className='w-100 pa3 ph4-ns'>
 						<Routes>
-							<Route path="/">
-								<Route index element={<Home/>}/>
-								<Route path="workshop" element={<Workshop/>}/>
-								<Route path="inventory" element={<Inventory/>}/>
-								{/*<Route path={'*'} element={<Home/>}/>*/}
-								{/*<Route path="*" element={<NoPage />} />*/}
-							</Route>
+							{/*<Route path="/" exact>*/}
+							{/*	/!*<Navigate to='/races' />*!/*/}
+							{/*</Route>*/}
+							<Route path="/race" element={<Home/>}/>
+							<Route path="/workshop" element={<Workshop/>}/>
+							<Route path="/inventory" element={<Inventory/>}/>
+							<Route path="/" element={<Navigate to='/race' />} />
 						</Routes>
 					</section>
 				</div>
