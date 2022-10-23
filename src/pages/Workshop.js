@@ -21,16 +21,14 @@ function Workshop( {partNFTs, skinNFTs, fetchNFTs} ) {
 	const allPartsPicked = Object.keys( partsPicked ).length === partTypes.length;
 
 	return <>
-		<h1 className='mv0 f3'>
-			<Link to='/' className='chevron-left mr3 fw4 white-70 link'>Back</Link>
-			Workshop
-		</h1>
 		<div className="flex">
 			<div className="robot-selected-parts mr4 mr5-l">
-				<h2 className='mt4'>Parts for your robot parts</h2>
+				<h1 className='mt4'>
+					{/*<Link to='/' className='back-link mr3 fw4 white-70 link'>Back</Link>*/}
+					Parts for your robot</h1>
 				<table className='center' cellPadding='0' cellSpacing={0}>
 					{partTypes.map( type => <tr>
-						<th className='f4 tl pv2 pr4'>
+						<th className='f4 tl pv2 pr4 fw4'>
 							<div className="w4">{type}</div>
 						</th>
 						<td className='pl4'>
@@ -53,7 +51,7 @@ function Workshop( {partNFTs, skinNFTs, fetchNFTs} ) {
 				</div>
 			</div>
 			{<div>
-				<h2 className='mt4'>Inventory {activePartType && ' - ' + activePartType}</h2>
+				<h1 className='mt4'>Inventory {activePartType && ' - ' + activePartType}</h1>
 				<div className="nl3 nr3 flex-gallery">
 					{partNFTs?.map( ( nft, key ) => {
 						const type = nft?.attributes?.PartType || nft?.attributes?.SkinType;
