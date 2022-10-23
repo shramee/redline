@@ -1,14 +1,23 @@
-.chevron-left:before,
-.chevron-right:before {
-	content: '';
-	display: inline-block;
-	border-bottom-right-radius: .07em;
-	width: .7em;
-	height: .7em;
-	box-shadow: .1em .1em currentColor;
-	margin-left: .32em;
-	margin-right: -.2em;
-	transform: rotate(-225deg);
+.back-link,
+.chevron-left,
+.chevron-right {
+	&:before {
+		content: '';
+		vertical-align: .05em;
+		display: inline-block;
+		border-bottom-right-radius: .07em;
+		width: .6em;
+		height: .6em;
+		box-shadow: .1em .1em currentColor;
+		margin-left: .43em;
+		margin-right: -.1em;
+		transform: rotate(-225deg);
+	}
+}
+
+.back-link {
+	vertical-align: baseline;
+	font-size: .8em;
 }
 
 .chevron-right:before {

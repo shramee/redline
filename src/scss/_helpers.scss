@@ -1,0 +1,11 @@
+.flex-gallery,
+.horizontal-scroll {
+	display: flex;
+	overflow: auto;
+	> * {
+		flex-shrink: 0;
+	}
+}
+.flex-gallery {
+	flex-wrap: wrap;
+}
