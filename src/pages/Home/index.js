@@ -61,4 +61,4 @@ const Home = ( props ) => {
 	</article>;
 }
 
-export default appStateHOC( Home );
+export default appStateHOC( Home, {fetchNFTs: true} );

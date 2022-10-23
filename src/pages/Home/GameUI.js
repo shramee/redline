@@ -8,9 +8,6 @@ const GameUI = ( {wallet, robotNFTs, fetchNFTs} ) => {
 	const [robotsInRace, setRobotsInRace] = useState( false );
 	const [openRaceSlotsCount, setOpenRaceSlotsCount] = useState( false );
 	const [totalSpaces,] = useState( defaultSpacesInRace );
-	const {selectedAddress} = wallet;
-
-	useEffect( () => fetchNFTs(), [selectedAddress] );
 
 	useEffect( () => {
 		getOpenRaceSlotsCount( wallet ).then( ( num ) => setOpenRaceSlotsCount( num ) );
@@ -38,26 +35,26 @@ const GameUI = ( {wallet, robotNFTs, fetchNFTs} ) => {
 	};
 
 	return <>
-		<Link className='fr br2 bw1 dib dim f7 lh-solid fw5 link ph3 pv2 bg-dark-red white ttu' to='workshop'>Workshop</Link>
+		<Link className='fr br2 bw1 dib dim f7 lh-solid fw5 link ph3 pv2 bg-dark-red white ttu'
+					to='workshop'>Workshop</Link>
 		<h3 className='mt0'>Your robots</h3>
 		<div className="robots cb flex overflow-auto pa2 b--white-10 ba">
-			{!!robotsInRace && !!robotNFTs && !!robotNFTs.length ? <>
-				{robotNFTs.map( ( robot, i ) =>
-					<Robot key={i}
-								 robotInRace={robotsInRace.includes( `${robot.token_id}` )} {...{robot, wallet, submitToRace}} />
-				)}
-			</> : <div className='f5 pv5 center tc'>
-				<div className='tracked pb4'>
-					You don't have any robots
+			{!!robotsInRace && !!robotNFTs && !!robotNFTs.length ?
+				<>
+					{robotNFTs.map( ( robot, i ) =>
+						<Robot key={i}
+									 robotInRace={robotsInRace.includes( `${robot.token_id}` )} {...{robot, wallet, submitToRace}} />
+					)}
+				</> :
+				<div className='f5 pv5 center tc'>
+					<div className='tracked pb4'>
+						You don't have any robots
+					</div>
+					<Link className='br2 bw1 dib dim f7 lh-solid fw5 link ph3 pv2 bg-white-20 white ttu' to='/workshop'>Go to
+						Workshop</Link>
 				</div>
-				<Link className='br2 bw1 dib dim f7 lh-solid fw5 link ph3 pv2 bg-white-20 white ttu' to='workshop'>Go to Workshop</Link>
-			</div>
 
 			}
-		</div>
-		<div className='f6 mt2'>
-			Get robots at <a target='_blank' rel="noreferrer" className='white link'
-											 href="https://discord.gg/UKmSwPrKjw">discord.gg/UKmSwPrKjw</a>
 		</div>
 
 		<h3>Race track</h3>
