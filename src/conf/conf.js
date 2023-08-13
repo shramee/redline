@@ -13,7 +13,7 @@ export const
 	sponsorLinks              = [
 		['isotropic', '#'],
 	],
-	raceTrackImageURI              = 'https://redline.game/a/t00.webp';
+	raceTrackImageURI              = 'https://redline-dao.github.io/data/tracks/images/yukon-peaks.jpeg';
 
 export const
 	defaultSpacesInRace = 6;

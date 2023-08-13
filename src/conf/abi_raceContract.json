@@ -2,38 +2,6 @@
     {
         "members": [
             {
-                "name": "MaxSpeed",
-                "offset": 0,
-                "type": "felt"
-            },
-            {
-                "name": "Acceleration",
-                "offset": 1,
-                "type": "felt"
-            },
-            {
-                "name": "Adherence",
-                "offset": 2,
-                "type": "felt"
-            },
-            {
-                "name": "Resistance",
-                "offset": 3,
-                "type": "felt"
-            },
-            {
-                "name": "Freinage",
-                "offset": 4,
-                "type": "felt"
-            }
-        ],
-        "name": "Stats",
-        "size": 5,
-        "type": "struct"
-    },
-    {
-        "members": [
-            {
                 "name": "low",
                 "offset": 0,
                 "type": "felt"
@@ -49,214 +17,758 @@
         "type": "struct"
     },
     {
-        "inputs": [],
-        "name": "getRobotsInRaceCount",
-        "outputs": [
+        "members": [
             {
-                "name": "res",
-                "type": "felt"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "id",
-                "type": "felt"
-            }
-        ],
-        "name": "getRobotBot",
-        "outputs": [
-            {
-                "name": "res",
-                "type": "felt"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "id",
-                "type": "felt"
-            }
-        ],
-        "name": "getRobotSignup",
-        "outputs": [
-            {
-                "name": "res",
-                "type": "felt"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "getSignUpCount",
-        "outputs": [
-            {
-                "name": "res",
-                "type": "felt"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "getCurrentRaceId",
-        "outputs": [
-            {
-                "name": "res",
-                "type": "felt"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "id",
-                "type": "felt"
-            }
-        ],
-        "name": "getRaceIdTimestamp",
-        "outputs": [
-            {
-                "name": "res",
-                "type": "felt"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "GetRobotContract",
-        "outputs": [
-            {
-                "name": "contract",
-                "type": "felt"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "GetTrackContract",
-        "outputs": [
-            {
-                "name": "contract",
-                "type": "felt"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "GetRewardContract",
-        "outputs": [
-            {
-                "name": "contract",
-                "type": "felt"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "GetCurrentTrackId",
-        "outputs": [
-            {
-                "name": "id",
-                "type": "felt"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "newCount",
-                "type": "felt"
-            }
-        ],
-        "name": "setRobotsInRaceCount",
-        "outputs": [],
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "id",
+                "name": "p1",
+                "offset": 0,
                 "type": "felt"
             },
             {
-                "name": "newId",
+                "name": "p2",
+                "offset": 1,
                 "type": "felt"
-            }
-        ],
-        "name": "setRobotBot",
-        "outputs": [],
-        "type": "function"
-    },
-    {
-        "inputs": [
+            },
             {
-                "name": "newContract",
+                "name": "p3",
+                "offset": 2,
                 "type": "felt"
-            }
-        ],
-        "name": "SetRobotContract",
-        "outputs": [],
-        "type": "function"
-    },
-    {
-        "inputs": [
+            },
             {
-                "name": "newContract",
+                "name": "p4",
+                "offset": 3,
                 "type": "felt"
-            }
-        ],
-        "name": "SetTrackContract",
-        "outputs": [],
-        "type": "function"
-    },
-    {
-        "inputs": [
+            },
             {
-                "name": "newContract",
+                "name": "p5",
+                "offset": 4,
                 "type": "felt"
-            }
-        ],
-        "name": "SetRewardContract",
-        "outputs": [],
-        "type": "function"
-    },
-    {
-        "inputs": [
+            },
             {
-                "name": "newId",
+                "name": "p6",
+                "offset": 5,
+                "type": "felt"
+            },
+            {
+                "name": "p7",
+                "offset": 6,
+                "type": "felt"
+            },
+            {
+                "name": "p8",
+                "offset": 7,
+                "type": "felt"
+            },
+            {
+                "name": "p9",
+                "offset": 8,
+                "type": "felt"
+            },
+            {
+                "name": "p10",
+                "offset": 9,
+                "type": "felt"
+            },
+            {
+                "name": "p11",
+                "offset": 10,
+                "type": "felt"
+            },
+            {
+                "name": "p12",
+                "offset": 11,
+                "type": "felt"
+            },
+            {
+                "name": "s1",
+                "offset": 12,
+                "type": "felt"
+            },
+            {
+                "name": "s2",
+                "offset": 13,
+                "type": "felt"
+            },
+            {
+                "name": "s3",
+                "offset": 14,
+                "type": "felt"
+            },
+            {
+                "name": "s4",
+                "offset": 15,
+                "type": "felt"
+            },
+            {
+                "name": "s5",
+                "offset": 16,
+                "type": "felt"
+            },
+            {
+                "name": "s6",
+                "offset": 17,
+                "type": "felt"
+            },
+            {
+                "name": "s7",
+                "offset": 18,
+                "type": "felt"
+            },
+            {
+                "name": "s8",
+                "offset": 19,
                 "type": "felt"
             }
         ],
-        "name": "SetCurrentTrackId",
-        "outputs": [],
-        "type": "function"
+        "name": "Pack",
+        "size": 20,
+        "type": "struct"
     },
     {
-        "inputs": [
+        "members": [
+            {
+                "name": "PartType",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "TemplateId",
+                "offset": 1,
+                "type": "felt"
+            },
+            {
+                "name": "MaxSpeed",
+                "offset": 2,
+                "type": "felt"
+            },
+            {
+                "name": "MaxSpeedRange",
+                "offset": 3,
+                "type": "felt"
+            },
+            {
+                "name": "Acceleration",
+                "offset": 4,
+                "type": "felt"
+            },
+            {
+                "name": "AccelerationRange",
+                "offset": 5,
+                "type": "felt"
+            },
+            {
+                "name": "Adherence",
+                "offset": 6,
+                "type": "felt"
+            },
+            {
+                "name": "HoofSize",
+                "offset": 7,
+                "type": "felt"
+            },
+            {
+                "name": "Braking",
+                "offset": 8,
+                "type": "felt"
+            },
+            {
+                "name": "BrakingRange",
+                "offset": 9,
+                "type": "felt"
+            },
+            {
+                "name": "Balance",
+                "offset": 10,
+                "type": "felt"
+            },
+            {
+                "name": "Driving",
+                "offset": 11,
+                "type": "felt"
+            },
+            {
+                "name": "Cooling",
+                "offset": 12,
+                "type": "felt"
+            },
+            {
+                "name": "EnergyProduction",
+                "offset": 13,
+                "type": "felt"
+            },
+            {
+                "name": "EnergyStorage",
+                "offset": 14,
+                "type": "felt"
+            },
+            {
+                "name": "EnergyConsumption",
+                "offset": 15,
+                "type": "felt"
+            },
+            {
+                "name": "HeatProduction",
+                "offset": 16,
+                "type": "felt"
+            },
+            {
+                "name": "Load",
+                "offset": 17,
+                "type": "felt"
+            },
+            {
+                "name": "Unbalance",
+                "offset": 18,
+                "type": "felt"
+            },
+            {
+                "name": "MaxHealth",
+                "offset": 19,
+                "type": "felt"
+            },
+            {
+                "name": "EnergyType",
+                "offset": 20,
+                "type": "felt"
+            },
+            {
+                "name": "EngineStart",
+                "offset": 21,
+                "type": "felt"
+            },
+            {
+                "name": "Brand",
+                "offset": 22,
+                "type": "felt"
+            },
+            {
+                "name": "Sponsor",
+                "offset": 23,
+                "type": "felt"
+            },
+            {
+                "name": "PartName",
+                "offset": 24,
+                "type": "felt"
+            },
+            {
+                "name": "Price",
+                "offset": 25,
+                "type": "felt"
+            }
+        ],
+        "name": "PartStats",
+        "size": 26,
+        "type": "struct"
+    },
+    {
+        "members": [
+            {
+                "name": "SkinType",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "TemplateId",
+                "offset": 1,
+                "type": "felt"
+            },
+            {
+                "name": "Name",
+                "offset": 2,
+                "type": "felt"
+            },
+            {
+                "name": "Color1",
+                "offset": 3,
+                "type": "felt"
+            },
+            {
+                "name": "Color2",
+                "offset": 4,
+                "type": "felt"
+            },
+            {
+                "name": "Mask",
+                "offset": 5,
+                "type": "felt"
+            },
+            {
+                "name": "Material1",
+                "offset": 6,
+                "type": "felt"
+            },
+            {
+                "name": "Material2",
+                "offset": 7,
+                "type": "felt"
+            },
+            {
+                "name": "SponsorURL",
+                "offset": 8,
+                "type": "felt"
+            },
+            {
+                "name": "Price",
+                "offset": 9,
+                "type": "felt"
+            }
+        ],
+        "name": "SkinStats",
+        "size": 10,
+        "type": "struct"
+    },
+    {
+        "members": [
+            {
+                "name": "NFTType",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "AssembledRobot",
+                "offset": 1,
+                "type": "AssembledRobot"
+            },
+            {
+                "name": "PartTemplate",
+                "offset": 19,
+                "type": "felt"
+            },
+            {
+                "name": "Health",
+                "offset": 20,
+                "type": "felt"
+            },
+            {
+                "name": "SkinTemplate",
+                "offset": 21,
+                "type": "felt"
+            }
+        ],
+        "name": "RedlineRobots",
+        "size": 22,
+        "type": "struct"
+    },
+    {
+        "members": [
+            {
+                "name": "RobotName",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "SkinsIds",
+                "offset": 1,
+                "type": "SkinsIds"
+            },
+            {
+                "name": "PartsIds",
+                "offset": 7,
+                "type": "PartsIds"
+            }
+        ],
+        "name": "AssembledRobot",
+        "size": 18,
+        "type": "struct"
+    },
+    {
+        "members": [
+            {
+                "name": "Color1",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "Color2",
+                "offset": 1,
+                "type": "felt"
+            },
+            {
+                "name": "Mask",
+                "offset": 2,
+                "type": "felt"
+            },
+            {
+                "name": "Material1",
+                "offset": 3,
+                "type": "felt"
+            },
+            {
+                "name": "Material2",
+                "offset": 4,
+                "type": "felt"
+            },
+            {
+                "name": "SponsorURL",
+                "offset": 5,
+                "type": "felt"
+            }
+        ],
+        "name": "SkinsIds",
+        "size": 6,
+        "type": "struct"
+    },
+    {
+        "members": [
+            {
+                "name": "FrontHoof",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "BackHoof",
+                "offset": 1,
+                "type": "felt"
+            },
+            {
+                "name": "Head",
+                "offset": 2,
+                "type": "felt"
+            },
+            {
+                "name": "Engine",
+                "offset": 3,
+                "type": "felt"
+            },
+            {
+                "name": "FrontLowerLeg",
+                "offset": 4,
+                "type": "felt"
+            },
+            {
+                "name": "FrontUpperLeg",
+                "offset": 5,
+                "type": "felt"
+            },
+            {
+                "name": "BackLowerLeg",
+                "offset": 6,
+                "type": "felt"
+            },
+            {
+                "name": "BackUpperLeg",
+                "offset": 7,
+                "type": "felt"
+            },
+            {
+                "name": "CoolingSystem",
+                "offset": 8,
+                "type": "felt"
+            },
+            {
+                "name": "Battery",
+                "offset": 9,
+                "type": "felt"
+            },
+            {
+                "name": "DistributionSystem",
+                "offset": 10,
+                "type": "felt"
+            }
+        ],
+        "name": "PartsIds",
+        "size": 11,
+        "type": "struct"
+    },
+    {
+        "data": [
+            {
+                "name": "role",
+                "type": "felt"
+            },
+            {
+                "name": "account",
+                "type": "felt"
+            },
+            {
+                "name": "sender",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "RoleGranted",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "role",
+                "type": "felt"
+            },
+            {
+                "name": "account",
+                "type": "felt"
+            },
+            {
+                "name": "sender",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "RoleRevoked",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "role",
+                "type": "felt"
+            },
+            {
+                "name": "previousAdminRole",
+                "type": "felt"
+            },
+            {
+                "name": "newAdminRole",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "RoleAdminChanged",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "account",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "Paused",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "account",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "Unpaused",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "from_",
+                "type": "felt"
+            },
+            {
+                "name": "to",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "Transfer",
+        "type": "event"
+    },
+    {
+        "data": [
             {
                 "name": "owner",
+                "type": "felt"
+            },
+            {
+                "name": "approved",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "Approval",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "owner",
+                "type": "felt"
+            },
+            {
+                "name": "operator",
+                "type": "felt"
+            },
+            {
+                "name": "approved",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "ApprovalForAll",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "name": "packId",
+                "type": "felt"
+            }
+        ],
+        "name": "getPack",
+        "outputs": [
+            {
+                "name": "pack",
+                "type": "Pack"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "TokenId_lit",
+                "type": "felt"
+            },
+            {
+                "name": "RobotStats",
+                "type": "PartStats"
+            },
+            {
+                "name": "SkinNames",
+                "type": "SkinStats"
+            }
+        ],
+        "name": "tokenURI_data_AssembledRobot",
+        "outputs": [
+            {
+                "name": "uri_len",
+                "type": "felt"
+            },
+            {
+                "name": "uri",
+                "type": "felt*"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "TokenId_lit",
+                "type": "felt"
+            }
+        ],
+        "name": "tokenURI_data_DisassembledRobot",
+        "outputs": [
+            {
+                "name": "uri_len",
+                "type": "felt"
+            },
+            {
+                "name": "uri",
+                "type": "felt*"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "TokenId_lit",
+                "type": "felt"
+            },
+            {
+                "name": "partStats",
+                "type": "PartStats"
+            }
+        ],
+        "name": "tokenURI_data_Part",
+        "outputs": [
+            {
+                "name": "uri_len",
+                "type": "felt"
+            },
+            {
+                "name": "uri",
+                "type": "felt*"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "TokenId_lit",
+                "type": "felt"
+            },
+            {
+                "name": "skinStats",
+                "type": "SkinStats"
+            }
+        ],
+        "name": "tokenURI_data_Skin",
+        "outputs": [
+            {
+                "name": "uri_len",
+                "type": "felt"
+            },
+            {
+                "name": "uri",
+                "type": "felt*"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "partType",
+                "type": "felt"
+            }
+        ],
+        "name": "GetPartTypeDisplay",
+        "outputs": [
+            {
+                "name": "partName",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "skinType",
+                "type": "felt"
+            }
+        ],
+        "name": "GetSkinTypeDisplay",
+        "outputs": [
+            {
+                "name": "skinName",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "name",
+                "type": "felt"
+            },
+            {
+                "name": "symbol",
+                "type": "felt"
+            },
+            {
+                "name": "admin",
                 "type": "felt"
             }
         ],
@@ -267,47 +779,38 @@
     {
         "inputs": [
             {
-                "name": "arr_len",
+                "name": "interfaceId",
                 "type": "felt"
-            },
-            {
-                "name": "arr",
-                "type": "felt*"
             }
         ],
-        "name": "sort",
+        "name": "supportsInterface",
         "outputs": [
             {
-                "name": "arr_len",
+                "name": "success",
                 "type": "felt"
-            },
-            {
-                "name": "arr",
-                "type": "felt*"
             }
         ],
         "stateMutability": "view",
         "type": "function"
     },
     {
-        "inputs": [
+        "inputs": [],
+        "name": "name",
+        "outputs": [
             {
-                "name": "arr_len",
-                "type": "felt"
-            },
-            {
-                "name": "arr",
-                "type": "felt*"
-            },
-            {
-                "name": "item",
+                "name": "name",
                 "type": "felt"
             }
         ],
-        "name": "index_of",
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "symbol",
         "outputs": [
             {
-                "name": "index",
+                "name": "symbol",
                 "type": "felt"
             }
         ],
@@ -317,19 +820,15 @@
     {
         "inputs": [
             {
-                "name": "arr_len",
+                "name": "owner",
                 "type": "felt"
-            },
-            {
-                "name": "arr",
-                "type": "felt*"
             }
         ],
-        "name": "index_of_max",
+        "name": "balanceOf",
         "outputs": [
             {
-                "name": "index",
-                "type": "felt"
+                "name": "balance",
+                "type": "Uint256"
             }
         ],
         "stateMutability": "view",
@@ -338,120 +837,15 @@
     {
         "inputs": [
             {
-                "name": "arr_len",
-                "type": "felt"
-            },
-            {
-                "name": "arr",
-                "type": "felt*"
-            },
-            {
-                "name": "index",
-                "type": "felt"
+                "name": "tokenId",
+                "type": "Uint256"
             }
         ],
-        "name": "remove_at",
+        "name": "ownerOf",
         "outputs": [
             {
-                "name": "arr_len",
+                "name": "owner",
                 "type": "felt"
-            },
-            {
-                "name": "arr",
-                "type": "felt*"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "trackId",
-                "type": "felt"
-            }
-        ],
-        "name": "GetCellCount",
-        "outputs": [
-            {
-                "name": "count",
-                "type": "felt"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "trackId",
-                "type": "felt"
-            }
-        ],
-        "name": "GetCellLength",
-        "outputs": [
-            {
-                "name": "length",
-                "type": "felt"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "trackId",
-                "type": "felt"
-            },
-            {
-                "name": "TimeArr_len",
-                "type": "felt"
-            }
-        ],
-        "name": "GetT_SurfaceDensity",
-        "outputs": [
-            {
-                "name": "SurfaceDensity",
-                "type": "felt"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "trackId",
-                "type": "felt"
-            },
-            {
-                "name": "TimeArr_len",
-                "type": "felt"
-            }
-        ],
-        "name": "GetT_Angle",
-        "outputs": [
-            {
-                "name": "Angle",
-                "type": "felt"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "robotId",
-                "type": "felt"
-            }
-        ],
-        "name": "GetRobotStats",
-        "outputs": [
-            {
-                "name": "RobotStats",
-                "type": "Stats"
             }
         ],
         "stateMutability": "view",
@@ -464,54 +858,11 @@
                 "type": "felt"
             }
         ],
-        "name": "SubmitRobot",
-        "outputs": [],
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "StartRace",
-        "outputs": [],
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "arr_len",
-                "type": "felt"
-            }
-        ],
-        "name": "DebugMakeArray",
+        "name": "ownerOfFelt",
         "outputs": [
             {
-                "name": "arr_len",
+                "name": "owner",
                 "type": "felt"
-            },
-            {
-                "name": "arr",
-                "type": "felt*"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "DebugConstructor",
-        "outputs": [],
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "MakeRobotsArray",
-        "outputs": [
-            {
-                "name": "arr_len",
-                "type": "felt"
-            },
-            {
-                "name": "arr",
-                "type": "felt*"
             }
         ],
         "stateMutability": "view",
@@ -520,139 +871,15 @@
     {
         "inputs": [
             {
-                "name": "arr_len",
-                "type": "felt"
-            },
-            {
-                "name": "arr",
-                "type": "felt*"
-            },
-            {
-                "name": "RobotsInRaceCount",
-                "type": "felt"
-            },
-            {
-                "name": "HumanPlayers",
-                "type": "felt"
-            }
-        ],
-        "name": "PopulateRobotArray",
-        "outputs": [
-            {
-                "name": "arr_len",
-                "type": "felt"
-            },
-            {
-                "name": "arr",
-                "type": "felt*"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "RobotArr_len",
-                "type": "felt"
-            },
-            {
-                "name": "RobotArr",
-                "type": "felt*"
-            },
-            {
-                "name": "RaceTrack",
-                "type": "felt"
-            }
-        ],
-        "name": "MakeTotalTimeArray",
-        "outputs": [
-            {
-                "name": "arr_len",
-                "type": "felt"
-            },
-            {
-                "name": "arr",
-                "type": "felt*"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "TotalTimeArr_len",
-                "type": "felt"
-            },
-            {
-                "name": "TotalTimeArr",
-                "type": "felt*"
-            },
-            {
-                "name": "RobotArr_len",
-                "type": "felt"
-            },
-            {
-                "name": "RobotArr",
-                "type": "felt*"
-            },
-            {
-                "name": "RaceTrack",
-                "type": "felt"
-            }
-        ],
-        "name": "PopulateTotalTimeArray",
-        "outputs": [
-            {
-                "name": "TotalTimeArr_len",
-                "type": "felt"
-            },
-            {
-                "name": "TotalTimeArr",
-                "type": "felt*"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "raceTrack",
-                "type": "felt"
-            }
-        ],
-        "name": "RaceEquation",
-        "outputs": [
-            {
-                "name": "WinnerIdUint256",
+                "name": "tokenId",
                 "type": "Uint256"
             }
         ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "name": "robotId",
-                "type": "felt"
-            },
-            {
-                "name": "trackId",
-                "type": "felt"
-            }
-        ],
-        "name": "MakeRobotTimeArray",
+        "name": "getApproved",
         "outputs": [
             {
-                "name": "arr_len",
+                "name": "approved",
                 "type": "felt"
-            },
-            {
-                "name": "arr",
-                "type": "felt*"
             }
         ],
         "stateMutability": "view",
@@ -661,46 +888,583 @@
     {
         "inputs": [
             {
-                "name": "TimeArr_len",
+                "name": "owner",
                 "type": "felt"
             },
             {
-                "name": "TimeArr",
-                "type": "felt*"
-            },
-            {
-                "name": "trackId",
-                "type": "felt"
-            },
-            {
-                "name": "RobotStats",
-                "type": "Stats"
-            },
-            {
-                "name": "LastSpeed",
-                "type": "felt"
-            },
-            {
-                "name": "CellLength",
-                "type": "felt"
-            },
-            {
-                "name": "Cells",
+                "name": "operator",
                 "type": "felt"
             }
         ],
-        "name": "PopulateRobotTimeArray",
+        "name": "isApprovedForAll",
         "outputs": [
             {
-                "name": "TimeArr_len",
+                "name": "isApproved",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "role",
+                "type": "felt"
+            }
+        ],
+        "name": "get_role_admin",
+        "outputs": [
+            {
+                "name": "admin",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "role",
                 "type": "felt"
             },
             {
-                "name": "TimeArr",
+                "name": "user",
+                "type": "felt"
+            }
+        ],
+        "name": "has_role",
+        "outputs": [
+            {
+                "name": "has_role",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "paused",
+        "outputs": [
+            {
+                "name": "paused",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "to",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "approve",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "to",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "felt"
+            }
+        ],
+        "name": "approveFelt",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "operator",
+                "type": "felt"
+            },
+            {
+                "name": "approved",
+                "type": "felt"
+            }
+        ],
+        "name": "setApprovalForAll",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "from_",
+                "type": "felt"
+            },
+            {
+                "name": "to",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "transferFrom",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "from_",
+                "type": "felt"
+            },
+            {
+                "name": "to",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "felt"
+            }
+        ],
+        "name": "transferFromFelt",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "from_",
+                "type": "felt"
+            },
+            {
+                "name": "to",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "data_len",
+                "type": "felt"
+            },
+            {
+                "name": "data",
+                "type": "felt*"
+            }
+        ],
+        "name": "safeTransferFrom",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "to",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "mint",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "role",
+                "type": "felt"
+            },
+            {
+                "name": "user",
+                "type": "felt"
+            }
+        ],
+        "name": "grant_role",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "role",
+                "type": "felt"
+            },
+            {
+                "name": "user",
+                "type": "felt"
+            }
+        ],
+        "name": "revoke_role",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "role",
+                "type": "felt"
+            },
+            {
+                "name": "user",
+                "type": "felt"
+            }
+        ],
+        "name": "renounce_role",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "pause",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "unpause",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "RobotId",
+                "type": "felt"
+            },
+            {
+                "name": "stats",
+                "type": "RedlineRobots"
+            }
+        ],
+        "name": "setStats",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "RobotId",
+                "type": "felt"
+            }
+        ],
+        "name": "GetStats",
+        "outputs": [
+            {
+                "name": "stats",
+                "type": "RedlineRobots"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "TemplateId",
+                "type": "felt"
+            }
+        ],
+        "name": "GetPartTemplate",
+        "outputs": [
+            {
+                "name": "PartTemplateRet",
+                "type": "PartStats"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "TemplateId",
+                "type": "felt"
+            }
+        ],
+        "name": "GetSkinTemplate",
+        "outputs": [
+            {
+                "name": "SkinTemplateRet",
+                "type": "SkinStats"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "PartTemplate",
+                "type": "PartStats"
+            }
+        ],
+        "name": "SetPartTemplate",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "PartTemplate1",
+                "type": "PartStats"
+            },
+            {
+                "name": "PartTemplate2",
+                "type": "PartStats"
+            },
+            {
+                "name": "PartTemplate3",
+                "type": "PartStats"
+            },
+            {
+                "name": "PartTemplate4",
+                "type": "PartStats"
+            },
+            {
+                "name": "PartTemplate5",
+                "type": "PartStats"
+            },
+            {
+                "name": "PartTemplate6",
+                "type": "PartStats"
+            },
+            {
+                "name": "PartTemplate7",
+                "type": "PartStats"
+            },
+            {
+                "name": "PartTemplate8",
+                "type": "PartStats"
+            },
+            {
+                "name": "PartTemplate9",
+                "type": "PartStats"
+            },
+            {
+                "name": "PartTemplate10",
+                "type": "PartStats"
+            }
+        ],
+        "name": "SetTenPartTemplate",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "SkinTemplate",
+                "type": "SkinStats"
+            }
+        ],
+        "name": "setSkinTemplate",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "RobotId",
+                "type": "felt"
+            }
+        ],
+        "name": "DisassembleRobot",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "SkinId",
+                "type": "felt"
+            },
+            {
+                "name": "caller",
+                "type": "felt"
+            },
+            {
+                "name": "ExpectedType",
+                "type": "felt"
+            }
+        ],
+        "name": "AssertSkinEligibility",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "PartId",
+                "type": "felt"
+            },
+            {
+                "name": "caller",
+                "type": "felt"
+            },
+            {
+                "name": "ExpectedType",
+                "type": "felt"
+            }
+        ],
+        "name": "AssertPartEligibility",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "partsIds",
+                "type": "PartsIds"
+            }
+        ],
+        "name": "CheckPartDuplicates",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "skinsIds",
+                "type": "SkinsIds"
+            }
+        ],
+        "name": "CheckSkinDuplicates",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "partsIds",
+                "type": "PartsIds"
+            },
+            {
+                "name": "skinsIds",
+                "type": "SkinsIds"
+            },
+            {
+                "name": "RobotName",
+                "type": "felt"
+            }
+        ],
+        "name": "AssembleRobot",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "tokenURI",
+        "outputs": [
+            {
+                "name": "tokenURI_len",
+                "type": "felt"
+            },
+            {
+                "name": "tokenURI",
                 "type": "felt*"
             }
         ],
         "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "PartId",
+                "type": "felt"
+            }
+        ],
+        "name": "GetPartStats",
+        "outputs": [
+            {
+                "name": "partStats",
+                "type": "PartStats"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "SkinId",
+                "type": "felt"
+            }
+        ],
+        "name": "GetSkinStats",
+        "outputs": [
+            {
+                "name": "skinStats",
+                "type": "SkinStats"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "Stats",
+                "type": "RedlineRobots"
+            }
+        ],
+        "name": "ComputeAssembledRobotStats",
+        "outputs": [
+            {
+                "name": "partStats",
+                "type": "PartStats"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "RobotId",
+                "type": "felt"
+            }
+        ],
+        "name": "ComputeAssembledRobotSkinNames",
+        "outputs": [
+            {
+                "name": "skinStats",
+                "type": "SkinStats"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "packId",
+                "type": "felt"
+            },
+            {
+                "name": "to",
+                "type": "felt"
+            }
+        ],
+        "name": "MintPack",
+        "outputs": [],
         "type": "function"
     }
 ]
