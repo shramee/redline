@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/redline/static/css/main.4bec84e6.css",
-    "main.js": "/redline/static/js/main.038fc052.js",
-    "static/js/787.1f475641.chunk.js": "/redline/static/js/787.1f475641.chunk.js",
+    "main.css": "/redline/static/css/main.0f3caef8.css",
+    "main.js": "/redline/static/js/main.11c74955.js",
+    "static/js/787.74cf5a0e.chunk.js": "/redline/static/js/787.74cf5a0e.chunk.js",
     "static/media/load.svg": "/redline/static/media/load.b721cb0492dd4220385e9c401bb9aa81.svg",
     "static/media/braking.svg": "/redline/static/media/braking.c3f11823d49a2c627c807a97362c9248.svg",
     "static/media/adherence.svg": "/redline/static/media/adherence.057363a616b9d447d53acd90a09be2ae.svg",
@@ -24,12 +24,12 @@
     "static/media/justice.svg": "/redline/static/media/justice.5eceda54c3308a886e2937b22825f18d.svg",
     "static/media/maxspeed.svg": "/redline/static/media/maxspeed.ca89e4e691fa8c296dad938c462073bb.svg",
     "static/media/youtube-brands.svg": "/redline/static/media/youtube-brands.55d8bd854c57dce336ea6357a7a387bd.svg",
-    "main.4bec84e6.css.map": "/redline/static/css/main.4bec84e6.css.map",
-    "main.038fc052.js.map": "/redline/static/js/main.038fc052.js.map",
-    "787.1f475641.chunk.js.map": "/redline/static/js/787.1f475641.chunk.js.map"
+    "main.0f3caef8.css.map": "/redline/static/css/main.0f3caef8.css.map",
+    "main.11c74955.js.map": "/redline/static/js/main.11c74955.js.map",
+    "787.74cf5a0e.chunk.js.map": "/redline/static/js/787.74cf5a0e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bec84e6.css",
-    "static/js/main.038fc052.js"
+    "static/css/main.0f3caef8.css",
+    "static/js/main.11c74955.js"
   ]
 }
