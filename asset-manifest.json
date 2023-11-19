@@ -1,18 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.6a3150b4.css",
-    "main.js": "/static/js/main.895a2670.js",
-    "static/js/787.1f475641.chunk.js": "/static/js/787.1f475641.chunk.js",
-    "static/media/discord.svg": "/static/media/discord.21d46731ccc99d66d17790a03f56ad2a.svg",
-    "static/media/twitter.svg": "/static/media/twitter.23905d0ac9e6d055d054616ba0b832ce.svg",
-    "index.html": "/index.html",
-    "static/media/youtube-brands.svg": "/static/media/youtube-brands.27012d6553f7ad10c2127a861173ad5f.svg",
-    "main.6a3150b4.css.map": "/static/css/main.6a3150b4.css.map",
-    "main.895a2670.js.map": "/static/js/main.895a2670.js.map",
-    "787.1f475641.chunk.js.map": "/static/js/787.1f475641.chunk.js.map"
+    "main.css": "/redline/static/css/main.4bec84e6.css",
+    "main.js": "/redline/static/js/main.038fc052.js",
+    "static/js/787.1f475641.chunk.js": "/redline/static/js/787.1f475641.chunk.js",
+    "static/media/load.svg": "/redline/static/media/load.b721cb0492dd4220385e9c401bb9aa81.svg",
+    "static/media/braking.svg": "/redline/static/media/braking.c3f11823d49a2c627c807a97362c9248.svg",
+    "static/media/adherence.svg": "/redline/static/media/adherence.057363a616b9d447d53acd90a09be2ae.svg",
+    "static/media/unbalance.svg": "/redline/static/media/unbalance.67c5a7a5e9138615c92af93400216625.svg",
+    "static/media/balance.svg": "/redline/static/media/balance.bd84765bc41fb399cd5e90973c4d757d.svg",
+    "index.html": "/redline/index.html",
+    "static/media/heatproduction.svg": "/redline/static/media/heatproduction.5fb7adb91b9d561b81fb99b3a9cbdcad.svg",
+    "static/media/cooling.svg": "/redline/static/media/cooling.20051bcfd2597c5bd2c5bc58954edbe2.svg",
+    "static/media/discord.svg": "/redline/static/media/discord.21d46731ccc99d66d17790a03f56ad2a.svg",
+    "static/media/hoofsize.svg": "/redline/static/media/hoofsize.12c1cc60df1709a676c75723c455dc77.svg",
+    "static/media/acceleration.svg": "/redline/static/media/acceleration.1a30eeb94ce148131bf4c80fa5cb0e25.svg",
+    "static/media/maxhealth.svg": "/redline/static/media/maxhealth.0201e8f4fb898b5b0244811aaec3cbcb.svg",
+    "static/media/enginestart.svg": "/redline/static/media/enginestart.4a67304889d3f5f95ef15752d60ad551.svg",
+    "static/media/energyconsumption.svg": "/redline/static/media/energyconsumption.5655f65ef98292cd9d08ef01b8e8e49d.svg",
+    "static/media/energyproduction.svg": "/redline/static/media/energyproduction.2b5a0b9781f01165c8c0cc043e8610d9.svg",
+    "static/media/twitter.svg": "/redline/static/media/twitter.23905d0ac9e6d055d054616ba0b832ce.svg",
+    "static/media/driving.svg": "/redline/static/media/driving.473b4abc53b1c371dc1ab85d8981d8bc.svg",
+    "static/media/energystorage.svg": "/redline/static/media/energystorage.2261b6f48366fe9b8b2efb19866f0fa1.svg",
+    "static/media/justice.svg": "/redline/static/media/justice.5eceda54c3308a886e2937b22825f18d.svg",
+    "static/media/maxspeed.svg": "/redline/static/media/maxspeed.ca89e4e691fa8c296dad938c462073bb.svg",
+    "static/media/youtube-brands.svg": "/redline/static/media/youtube-brands.55d8bd854c57dce336ea6357a7a387bd.svg",
+    "main.4bec84e6.css.map": "/redline/static/css/main.4bec84e6.css.map",
+    "main.038fc052.js.map": "/redline/static/js/main.038fc052.js.map",
+    "787.1f475641.chunk.js.map": "/redline/static/js/787.1f475641.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a3150b4.css",
-    "static/js/main.895a2670.js"
+    "static/css/main.4bec84e6.css",
+    "static/js/main.038fc052.js"
   ]
 }
