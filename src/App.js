@@ -1,66 +1,63 @@
-import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Header from './layout/Header'
 import Home from './pages/Home'
 import Workshop from './pages/Workshop'
 import Inventory from './pages/Inventory'
 import AppContext from './app/AppContext';
-import {useEffect, useState} from "react";
-import {fetchNFTsFromAspect} from "./services/data";
+import { useEffect, useState } from "react";
+import { fetchNFTsFromAspect } from "./services/data";
 
 function App() {
-	const [context, _setContext] = useState( {
+	const [context, _setContext] = useState({
 		wallet: {},
-		nfts  : null,
-	} );
+		nfts: null,
+	});
 	const fetchNFTs = () => {
-		const {selectedAddress} = context.wallet || {};
-		selectedAddress && fetchNFTsFromAspect( selectedAddress )
-			.then( nfts => {
+		const { selectedAddress } = context.wallet || {};
+		selectedAddress && fetchNFTsFromAspect(selectedAddress)
+			.then(nfts => {
 				const partNFTs = [], skinNFTs = [], robotNFTs = [], allNFTs = [];
-				nfts.forEach( ( {token_id, name, description, attributes, image_uri} ) => {
+				nfts.forEach(({ token_id, name, description, attributes, image_uri }) => {
 					const nftData = {
 						token_id, description, image_uri,
-						name      : name.replace( 'Redline Alpha: ', '' ),
+						name: name.replace('Redline Alpha: ', ''),
 						attributes: {}
 					};
-					attributes.forEach( ( {trait_type, value} ) => {
-						if ( value && value !== '0' ) {
-							nftData.attributes[trait_type.replace( ' ', '' )] = value
+					attributes.forEach(({ trait_type, value }) => {
+						if (value && value !== '0') {
+							nftData.attributes[trait_type.replace(' ', '')] = value
 						}
-					} );
-					allNFTs.push( nftData );
-					if ( nftData.attributes['PartType'] ) {
-						partNFTs.push( nftData );
-					} else if ( nftData.attributes['SkinType'] ) {
-						skinNFTs.push( nftData );
+					});
+					allNFTs.push(nftData);
+					if (nftData.attributes['PartType']) {
+						partNFTs.push(nftData);
+					} else if (nftData.attributes['SkinType']) {
+						skinNFTs.push(nftData);
 					} else {
-						robotNFTs.push( nftData );
+						robotNFTs.push(nftData);
 					}
-				} );
-				setContext( {allNFTs, partNFTs, skinNFTs, robotNFTs} )
-			} );
+				});
+				setContext({ allNFTs, partNFTs, skinNFTs, robotNFTs })
+			});
 	}
 
-	function setContext( newContext ) {
-		_setContext( {...context, ...newContext} )
+	function setContext(newContext) {
+		_setContext({ ...context, ...newContext })
 	}
 
 	return (
-		<BrowserRouter>
-			<AppContext.Provider value={{...context, setContext, fetchNFTs}}>
+		<BrowserRouter basename={process.env.PUBLIC_URL}>
+			<AppContext.Provider value={{ ...context, setContext, fetchNFTs }}>
 				<div className="App min-vh-100 flex flex-column w-100 bg-near-black near-white">
 					<header id='header-navbar' className="dt w-100 border-box pa3 ph4-ns bb b--white-10 flex items-center">
-						<Header/>
+						<Header />
 					</header>
 
 					<section className='w-100 pa3 ph4-ns'>
 						<Routes>
-							{/*<Route path="/" exact>*/}
-							{/*	/!*<Navigate to='/races' />*!/*/}
-							{/*</Route>*/}
-							<Route path="/race" element={<Home/>}/>
-							<Route path="/workshop" element={<Workshop/>}/>
-							<Route path="/inventory" element={<Inventory/>}/>
+							<Route path="/race" element={<Home />} />
+							<Route path="/workshop" element={<Workshop />} />
+							<Route path="/inventory" element={<Inventory />} />
 							<Route path="/" element={<Navigate to='/race' />} />
 						</Routes>
 					</section>
